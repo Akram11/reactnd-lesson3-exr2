@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Dashboard from './Dashboard';
 
 /*
 Display a list of movies where each movie contains a list of users that favorited it.
@@ -108,6 +109,7 @@ class App extends Component {
         <h2>How Popular is Your Favorite Movie?</h2>
 
 
+          <Dashboard movies={movies} users={users} profiles={profiles}/>
 
       </div>
     );
