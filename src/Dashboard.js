@@ -3,13 +3,28 @@ import Movie from './Movie'
 
 class Dashboard extends Component {
 
+renderMovie = movie => {
+    return(<Movie {...movie}/>)
+}
+
+renderMovies = movies => {
+   return(
+    //  <div><li>{for(const movieID in this.props.movies){
+    //    renderMovie(movies[movieID].name);
+    //  }}
+    // </li></div>
+    <div></div>
+   )
+}
+
 render (){
-  for (const movie in this.props.movies){
-    console.log(this.props.movies[movie].name);
-  }
-  return(<div></div>);
+
+  return(
+    (this.props.movies[2].id));
+
 }
 
 }
+
 
 export default Dashboard;
