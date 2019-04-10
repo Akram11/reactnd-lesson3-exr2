@@ -110,6 +110,7 @@ class App extends Component {
 
 
           <Dashboard movies={movies} users={users} profiles={profiles}/>
+          
 
       </div>
     );
